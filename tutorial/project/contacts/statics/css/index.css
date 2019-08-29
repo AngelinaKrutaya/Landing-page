@@ -1,0 +1,17 @@
+body {
+  background-color:#ffeed5!important;
+  color: #79532b!important;
+}
+
+.jcarousel-control-next {
+    align: right!important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}

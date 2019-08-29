@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Теплозащита</title>
+    {% load static from staticfiles %}
+ <!--   <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--   <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">-->
+    <link href="{% static 'css/index.css'%}" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <!--   <link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">-->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="{% static 'js/bootstrap.js' %}"></script>-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <script>
+        (function($) {
+            $(function() {
+        /*
+         Carousel initialization
+        */
+                $('.jcarousel')
+                    .jcarousel({
+                // Options go here
+                    });
+
+        /*
+         Prev control initialization
+         */
+                $('.jcarousel-control-prev')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                        })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                        })
+                    .jcarouselControl({
+                        // Options go here
+                        target: '-=1'
+                        });
+
+        /*
+         Next control initialization
+         */
+                $('.jcarousel-control-next')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                // Options go here
+                        target: '+=1'
+                    });
+
+        /*
+         Pagination initialization
+         */
+                $('.jcarousel-pagination')
+                    .on('jcarouselpagination:active', 'a', function() {
+                        $(this).addClass('active');
+                    })
+                    .on('jcarouselpagination:inactive', 'a', function() {
+                         $(this).removeClass('active');
+                    })
+                     .jcarouselPagination({
+                // Options go here
+                     });
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="col-md-12">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ООО «ГОМЕЛЬТЕПЛОЗАЩИТА»</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#Огнеупорная">Огнеупорная футеровка</a></li>
+                <li><a href="#О_компании">О компании</a></li>
+                <li><a href="#myCarousel">Галерея</a></li>
+                <li><a href="#Наши_объекты">Наши Объекты</a></li>
+                <li><a href="#Сертификаты">Сертификаты</a></li>
+                <li><a href="#Наши_контакты">Наши контакты</a></li>
+            </ul>
+            </div>
+             </div>
+        </div>
+    <div >
+        {% load static from staticfiles %}
+            <img src="{%static 'picture/8.jpg' %} " width="1668">
+    </div>
+    <div id="О_компании" class="container">
+        <div class="col-md-12" style="opacity:0.8;">
+            <div class="jumbotron">
+                <h2>Cовременные технологии огнеупорной футеровки </h2>
+             <p class="text-justify">   Мы выполняем работы по ремонту, строительству, футеровке промышленных печей и других тепловых агрегатов как из формованных,
+                так и неформованных материалов, с применением новых технологий футеровочных работ, что позволяет уменьшить сроки ремонта, а
+                также изготавливаем любые виды анкерных крепежей для промышленных печей . Консультируем по модернизации футеровки,
+                проектируем, изготавливаем, монтируем и производим запуски печей плавления алюминиевого лома производительностью до
+                10 тонн под «ключ».
+                Производим модернизацию, ремонт существующих печей плавления</p>
+            <ul type="square">
+                <li>прокатные и кузнечные нагревательные печи;</li>
+                <li>термические печи;</li>
+                <li>печи плавления цветной металлургии;</li>
+                <li>печи химической промышленности;</li>
+                <li>печи промышленности строительных материалов (туннельные печи, известково-обжигательные печи, вращающиеся печи
+                    цементной промышленности);</li>
+                <li>обмуровка всех видов котлов, топок и других тепловых агрегатов с использованием как формованных, так и
+                    не формованных материалов.</li>
+            </ul>
+            <p>
+                У нас имеются в достаточном количестве  специализированные механизмы и машины, необходимые для выполнения работ:
+            </p>
+            <ul type="square">
+                <li>бетоносмесители принудительного действия;</li>
+                <li>компрессоры;</li>
+                <li>установки для нанесения торкрет-масс;</li>
+                <li>станки для резки огнеупоров;</li>
+                <li> сварочные агрегаты для различных видов сварочных работ;</li>
+                <li>подъемные механизмы и иное, необходимое для выполнения данного вида работ оборудование.</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+        <div  id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+            <ol class="carousel-indicators">
+            {% for image in images%}
+                <li data-target="#myCarousel" data-slide-to="{{image.id}}" class="item{% if forloop.first%}active{%endif%}"></li>
+            {%endfor%}
+            </ol>
+            <div class="carousel-inner" role="listbox"  >
+                {% for image in images%}
+                         <div class="item{% if forloop.first %} active{% endif %}" >
+                          <img src="{{image.img.url}}" height="600"  />
+                        </div>
+                {%endfor%}
+            </div>
+  <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel"  role="button" data-slide="prev" >
+                <span class="glyphicon glyphicon-chevron-left" ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" >
+                <span class="glyphicon glyphicon-chevron-right" ></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    <div id="Наши_объекты" class="container">
+        <div class="col-md-12">
+        <h2>Наши Объекты</h2>
+        <p>Нашими специалистами выполнялись футеровочные работы на следующих объектах на территории Республики Беларусь и Российской Федерации:</p>
+
+            <div class="table-responsive">
+        <table class="table table-bordered" style="font-weight:bold;">
+            <thead>
+                <tr>
+                    <th>Наименование объекта</th>
+                    <th>Наименование работ</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {%for object in objects%}
+                    <tr>
+                        <td>{{object.name_object}}</td>
+                        <td>{{object.name_work}}</td>
+                    </tr>
+                    {%endfor%}
+            </tbody>
+        </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="Сертификаты" class="container-fluid">
+        <div  id="sertificate" class="jcarousel-wrapper" >
+  <!-- Indicators -->
+            <div class="jcarousel" role="listbox" style="margin-left:10%; margin-right:10%">
+                {% for cert in certificates%}
+                       <img src="{{cert.page.url}}  "  width="400" height="500"  />
+                {%endfor%}
+            </div>
+  <!-- Left and right controls -->
+              <a href="#sertificate" class="jcarousel-control-prev">&lsaquo; Назад</a>
+                <a href="#sertificate" class="jcarousel-control-next" align="right">Вперед &rsaquo;</a>
+        </div>
+    </div>
+
+
+    <div id="Наши_контакты" class="container-fluid">
+        <div class="row" >
+            <div class="col-md-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.3883254982075!2d30.994884015220702!3d52.453994348872094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469133172851b%3A0x92dc991974b125f0!2z0YPQuy4gNTAg0LvQtdGCINCR0KHQodCgIDcsINCT0L7QvNC10LvRjA!5e0!3m2!1sru!2sby!4v1566907115644!5m2!1sru!2sby"  height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-3">
+                <address>
+                    <h3>Контакты:</h3>
+                 <abbr title="Phone">тел/факс:</abbr> +375 232 210441</p>
+                    <abbr title="Phone">тел:</abbr>  +375 29 6800898 Сергей Георгиевич - главный инженер,</p>
+                  <abbr title="Phone">тел:</abbr>   +375 44 5895879 Юрий Николаевич - Директор </p>
+                 <abbr title="Phone">факс:</abbr>   +375 232 210441 </p>
+                    </address>
+
+                    </div>
+
+            <div class="col-md-4" >
+                <form action="" method="post" >{% csrf_token %}
+                    <div class="fieldWrapper">
+                            {{ form.as_table }}
+                    </div>
+                    <input type="submit" value="Отправить" >
+                </form>
+
+               <!-- <form action="" method="post" name="Contact" align="right">{% csrf_token %}
+                        <input type="text" class = "form-control input-sm" placeholder="Введите Имя ">
+                        <input type="text" class = "form-control input-sm" placeholder="Введите Введите Фамилию">
+                        <input type="text" class = "form-control input-sm" placeholder="Введите Email">
+                        <input type="text" class = "form-control input-sm" placeholder="Введите свой номер телефона">
+                        <input type="text" class = "form-control input-lg" placeholder="Введите текст сообщения">
+                        <button type="submit" class = "btn btn-default btn-lg" > Отправить </button>
+                </form>-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="footer">
+            <p class="text-muted">© ООО "Гомельтеплозащита"</p>
+
+        </footer>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</body>
+</html>
