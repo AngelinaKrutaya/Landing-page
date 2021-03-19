@@ -31,7 +31,7 @@ optional-django==0.1.0
 paramiko==2.4.2
 parse==1.9.0
 parse-type==0.4.2
-Pillow==5.4.1
+Pillow==8.1.1
 pluggy==0.8.1
 py==1.7.0
 pyasn1==0.4.5
