@@ -60,7 +60,7 @@ selenium==3.141.0
 six==1.12.0
 sqlparse==0.3.0
 taf==0.2.19022
-urllib3==1.24.1
+urllib3==1.26.5
 virtualenv==16.6.0
 vue==0.0.1
 xmltodict==0.11.0
